@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Shopping</div>
+            <ul>
+                <li><a href="#home" id="home-link">Home</a></li>
+                <li><a href="#products" id="products-link">Products</a></li>
+            </ul>
+            <div class="search-cart">
+                <input type="text" id="search-bar" placeholder="Search...">
+                <div id="cart-icon">
+                    <img src="./img/cart.png" alt="Cart" width="45px">
+                    <span id="cart-count">0</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Discover Amazing Products</h1>
+                <p>Shop the latest trends with ease and convenience</p>
+                <button class="cta-button">Shop Now</button>
+            </div>
+            <div class="hero-image">
+                <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/v1/attachments/delivery/asset/e4b8680241b7e5753f0a76dd151914b8-1636911136/scene_2/create-an-animated-gif-lottie-json-animation-for-web-and-mobile.gif" alt="Shopping Experience">
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <h2>Featured Products</h2>
+            <div id="products-list" class="product-grid">
+                <!-- Products will be dynamically inserted here -->
+            </div>
+            <button class="view-more-button">View More</button>
+        </section>
+
+        <section id="features" class="features">
+            <h2>Our Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-truck-fast"></i>
+                    <h3>Fast Delivery</h3>
+                    <p>Get your products delivered quickly and efficiently</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>Secure Payments</h3>
+                    <p>Shop with confidence using our secure payment methods</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Our customer support team is always ready to help</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="clients" class="clients">
+            <h2>Our Clients</h2>
+            <div class="client-logos">
+                <img src="client1.png" alt="Client 1">
+                <img src="client2.png" alt="Client 2">
+                <img src="client3.png" alt="Client 3">
+                <img src="client4.png" alt="Client 4">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We are committed to providing the best shopping experience for our customers.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#clients">Clients</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@shopnow.com</p>
+                <p>Phone: (123) 456-7890</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ShopNow. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <section id="cart" class="cart">
+        <h2>Your Cart</h2>
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Total: $0.00</p>
+    </section>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+
